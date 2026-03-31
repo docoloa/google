@@ -5,7 +5,7 @@ const proxy = createProxyMiddleware({
   target: "https://www.google.com.hk", // 修复：必须是根域名
   changeOrigin: true,
   pathRewrite: {
-    "^/api/proxy": "/maps", // 路径重写
+    "^/": "/maps", // 路径重写
   },
 });
 
