@@ -8,7 +8,7 @@ const proxy = createProxyMiddleware({
 
   onProxyReq: (proxyReq) => {
     proxyReq.setHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/133.0.0.0 Safari/537.36");
-    proxyReq.setHeader("Referer", "https://www.google.com/maps");
+    proxyReq.setHeader("Referer", "https://www.google.com.hk/maps");
     proxyReq.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
   },
 
